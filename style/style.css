@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font: 14px/25px 'Playfair Display', serif; background:#fff; color:#626262; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
 	padding:0;
 	margin:0;
@@ -10,14 +10,14 @@ div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,
 	list-style:none;
 }
 button                         { cursor: pointer; padding: 0 }
-select, input, textarea,button { font:12px Tahoma, sans-serif; vertical-align:middle; }
+select, input, textarea,button { font: 14px 'Playfair Display', serif; vertical-align:middle; }
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font: 14px 'Playfair Display', serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -45,30 +45,184 @@ a:hover                        { text-decoration:none; }
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    padding: 0 5%;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------WRAPPER--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.header {
+    overflow: hidden;
+    min-height: 155px;
+    display: flex;
+    align-items: center;
+}
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------CONTENT--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+.navigation li{
+    display: inline-block;
+    margin-left: 115px;
+}
 
+.navigation li:first-child{
+    margin-left: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NEWS POST--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.main-news {
+    margin-bottom: 100px;
+}
+
+.main-news img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 95px;
+}
+
+.main-news p {
+    margin-bottom: 45px;
+}
+
+article span {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    margin-bottom: 25px;
+}
+
+.main-news a {
+    text-decoration: none;
+}
+
+.main-news a:hover {
+    text-decoration: underline;
+}
+
+.other-news {
+    overflow: hidden;
+}
+
+.other-news li {
+    float: left;
+    width: 425px;
+    margin-right: 140px;
+    margin-bottom: 130px;
+}
+
+.other-news li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.other-news img {
+    margin-bottom: 30px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.newsletter-subscribe {
+    background-color: #f0f0f0;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.newsletter-subscribe .sign-up {
+    text-align: center;
+    width: 405px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000 ;
+}
+
+.newsletter-subscribe input {
+    border: 0;
+    width: 350px;
+    background: #f0f0f0 ;
+}
+
+.newsletter-subscribe button {
+    border: 0;
+    background: url(../images/button.png) no-repeat center;
+    height: 40px;
+    width: 50px;
+}
 
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------FOOTER---------------------------------------*/
+/*-------------------------------------LOAD MORE---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.load-more {
+    padding: 100px 0;
+}
 
+.load {
+    width: 100%;
+    text-align: center;
+}
+
+.load button{
+    border: 1px solid #626262;
+    width: 165px;
+    font-size: 20px;
+    color: #626262;
+    background: #fff;
+    height: 60px;
+}
+
+.load button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #626262;
+}
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------OTHER----------------------------------------*/
+/*-------------------------------------FOOTER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.footer {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    background-color: #f0f0f0;
+}
+
+.footer li {
+    margin-left: 15px;
+    float: left;
+}
+
+.social ul {
+    float: right;
+}
+
+.social ul:before {
+    content: "Follow";
+    display: block;
+    float: left;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
