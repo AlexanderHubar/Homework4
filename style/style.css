@@ -85,9 +85,6 @@ h2 {
     text-transform: uppercase;
 }
 
-.navigation a:hover {
-    text-decoration: underline;
-}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NEWS POST--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -115,7 +112,9 @@ h2 {
 }
 
 .category:hover,
-.comment:hover {
+.comment:hover,
+.footer a:hover,
+.navigation a:hover {
     text-decoration: underline !important;
 }
 
@@ -153,13 +152,13 @@ h2 {
     border-bottom: 1px solid #000 ;
 }
 
-.newsletter-subscribe input {
+.newsletter-subscribe input[type="text"] {
     border: 0;
     width: 350px;
     background-color: transparent;
 }
 
-.newsletter-subscribe button {
+.newsletter-subscribe input[type="submit"] {
     border: 0;
     background: transparent url(../images/button.png) no-repeat center;
     height: 40px;
@@ -178,7 +177,7 @@ h2 {
     text-align: center;
 }
 
-.load button{
+.btn{
     border: 1px solid #626262;
     width: 165px;
     font-size: 20px;
@@ -187,7 +186,7 @@ h2 {
     height: 60px;
 }
 
-.load button:hover {
+.btn:hover {
     color: #fff;
     border: 1px solid #fff;
     background-color: #626262;
@@ -202,13 +201,14 @@ h2 {
     background-color: #f0f0f0;
 }
 
+.footer .container {
+    box-sizing: border-box;
+    padding-left: 2.5%;
+}
+
 .footer li {
     margin-left: 15px;
     float: left;
-}
-
-.social ul {
-    float: right;
 }
 
 .social a:hover {
@@ -223,8 +223,4 @@ h2 {
 
 .footer a {
     text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
 }
