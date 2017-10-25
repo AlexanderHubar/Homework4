@@ -97,7 +97,6 @@ h2 {
 
 .main-news img {
     width: 100%;
-    height: auto;
     margin-bottom: 95px;
 }
 
@@ -105,20 +104,19 @@ h2 {
     margin-bottom: 45px;
 }
 
-article span {
-    display: block;
-    font-family: 'Ubuntu', sans-serif;
+.category,
+.comment {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif !important;
     text-transform: uppercase;
-    color: #b4ad9e;
+    color: #b4ad9e !important;
+    text-decoration: none !important;
     margin-bottom: 25px;
 }
 
-.main-news a {
-    text-decoration: none;
-}
-
-.main-news a:hover {
-    text-decoration: underline;
+.category:hover,
+.comment:hover {
+    text-decoration: underline !important;
 }
 
 .other-news {
@@ -140,7 +138,7 @@ article span {
     margin-bottom: 30px;
 }
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
+/*-------------------------------------SUBSCRIBE--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .newsletter-subscribe {
     background-color: #f0f0f0;
@@ -158,7 +156,7 @@ article span {
 .newsletter-subscribe input {
     border: 0;
     width: 350px;
-    background: #f0f0f0 ;
+    background-color: rgba(255, 255, 255, .0);
 }
 
 .newsletter-subscribe button {
@@ -211,6 +209,10 @@ article span {
 
 .social ul {
     float: right;
+}
+
+.social a:hover {
+    color: #626262;
 }
 
 .social ul:before {
