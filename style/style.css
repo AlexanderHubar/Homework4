@@ -88,6 +88,16 @@ h2 {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NEWS POST--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.news-title {
+    font-size: 30px !important;
+    color: #626262 !important;
+    text-decoration: none !important;
+}
+
+.news-title:hover {
+    color: black !important;
+}
+
 .main-news {
     margin-bottom: 100px;
 }
@@ -149,7 +159,7 @@ h2 {
     text-align: center;
     width: 405px;
     margin: 0 auto;
-    border-bottom: 1px solid #000 ;
+    border-bottom: 1px solid #000;
 }
 
 .newsletter-subscribe input[type="text"] {
